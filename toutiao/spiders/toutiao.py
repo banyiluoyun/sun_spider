@@ -64,7 +64,7 @@ class comicspider(scrapy.Spider):
     ajax_url_base = 'https://www.toutiao.com/api/pc/feed/?'
     # for url in start_urls:
     #     start_url = url
-    #     print(url)
+    print('11123213')
     def start_requests(self):
         yield SplashRequest(url=self.start_urls[0],callback=self.sub_nav, splash_headers=self.headers,args={'wait':0.5},)
     # yield scrapy.Request(url=self.start_urls[0],callback=self.sub_nav,headers=self.headers,dont_filter=True)
